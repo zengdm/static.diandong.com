@@ -1,0 +1,304 @@
+.mCSB_inside>.mCSB_container{
+    margin-right: 0;
+}
+.video-play-breadcrumb{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    color:#666; 
+    font-size: 14px;
+}
+.body-bg{
+    background: #f2f2f2;
+    min-width: 1200px;
+}
+.video-play-breadcrumb i{
+    font-size: 10px;
+    vertical-align: top;
+}
+.video-play-breadcrumb a{
+    color: #333;
+    font-weight: 600;
+}
+.video-play-main-title{
+    height: 66px;
+}
+.video-play-main-title span{
+    line-height: 66px;
+    font-size: 30px;
+    color: #333;
+    margin-right: 8px;
+}
+.video-play-main-title em{
+    font-size: 14px;
+    color: #999;
+}
+.video-play-main-box{
+    height: 505px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.video-play-main-box-play{
+    width: 898px;
+    height: 505px;
+    background-color: #000;
+}
+/* 滚动条背景基本样式 */
+
+.video-play-main-box-list{
+    width: 302px;
+    height: 505px;
+    background:#2e3033;
+    padding: 0 6px 0 12px;
+    box-sizing:border-box;
+}
+.video-play-main-box-list-box{
+    height: 462px;
+    background:#2e3033;
+    overflow: auto;
+}
+/*滚动条*/
+.mCSB_scrollTools .mCSB_draggerRail{
+    width: 10px!important;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    width: 10px!important;
+    background-color: #666!important;
+}
+
+.video-play-main-box-list h5{
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    font-size: 14px;
+    padding-left:6px;
+    box-sizing:border-box; 
+}
+.video-play-main-box-list-item{
+    height: 62px;
+    width: 265px;
+    margin-bottom: 2px;
+    padding:4px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.video-play-main-box-list-item:hover{
+    background:#000;
+}
+.video-play-main-box-list-item:hover .video-play-main-box-list-item-pic{
+    border: 2px solid #ec0000;
+}
+.video-play-main-box-list-item.current{
+    background:#000;
+}
+.video-play-main-box-list-item.current .video-play-main-box-list-item-pic{
+    border: 2px solid #ec0000;
+}
+.video-play-main-box-list-item-pic{
+    width: 90px;
+    height: 62px;
+    overflow: hidden;
+    border: 2px solid #2e3033;
+    border-radius: 4px;
+    box-sizing:border-box;
+    position: relative;
+    background: #fafafa url(/img/placeholder.png) no-repeat center;
+    background-size: 62px;
+}
+.video-play-main-box-list-item-pic-supernatant{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:90px;
+    height:20px;
+    line-height: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+    padding: 0 6px ;
+    box-sizing:border-box;
+}
+.video-play-main-box-list-item-pic-supernatant div{
+    display: inline-block;
+    width:0;
+    height:0;
+    border-width:6px 0 6px 8px;
+    border-style:solid;
+    border-color:transparent transparent transparent #fff;
+    margin-right: 2px;
+}
+.video-play-main-box-list-item-pic img{
+     width: 90px;
+    height: 62px;
+}
+.video-play-main-box-list-item-intro{
+    color: #fff;
+    width: 158px;
+    font-size: 14px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+.video-play-main-box-list-item-intro p{
+    width: 158px;
+    height: 36px;
+    margin-bottom: 4px;
+    vertical-align: top;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+}
+.video-play-main-box-list-item-intro p:nth-last-of-type(1){
+    margin-bottom: 10px;
+}
+.video-play-main-box-list-item-intro span{
+    color: #666;
+    font-size: 12px;
+}
+.video-play-main-share{
+    height:60px;
+    line-height: 60px; 
+    color: #999;
+    font-size: 16px;
+}
+.video-play-main-share img{
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.video-play-other-comment{
+    width: 894px;
+    /*height: 300px;*/
+    /*background: #fff;*/
+}
+
+/*相关车系*/
+.detail-left-cx{
+    width: 864px;
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 22px;
+    border: 1px solid #e9e9e9;
+    border-radius: 6px;
+}
+.detail-left-cx h5{
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-left: 3px solid #4175e8;
+    font-size: 16px;
+}
+.detail-cx-img img{
+    width: 160px;
+    /*height: 90px;*/
+    height: auto;
+    margin: 18px 35px 33px 18px;
+}
+.detail-cx-text{
+    /*width: 650px;*/
+}
+.detail-cx-text>h6{
+    font-size: 18px;
+    color: #000;
+}
+.detail-cx-text>h6 span{
+    padding: 2px 4px;
+    margin-left: 6px;
+    font-size: 12px;
+    color: #fff;
+    background: #b3c3f2;
+    border-radius: 4px;
+}
+.detail-cx-text>h6 a{
+    padding: 0 18px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #4175e8;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #4175e8;
+}
+.detail-cx-text>p{
+    padding: 8px 0 10px 0;
+    font-size: 12px;
+    color: #999;
+}
+.detail-cx-text>p>span{
+    font-size: 16px;
+    color: #ec0000;
+}
+.detail-cx-text>ul{
+    border: 1px solid #e9e9e9;
+}
+.detail-cx-text>ul>li{
+    height: 40px;
+    padding: 0 35px;
+    margin: 10px 0;
+    text-align: center;
+    border-right: 1px solid #e9e9e9;
+    color: #999;
+}
+.detail-cx-text>ul>li:last-of-type{
+    border-right: none;
+}
+.detail-cx-text>ul>li p{
+    margin-top: 5px;
+    color: #4175e8;
+}
+.detail-cx-text>ul>li span{
+    font-size: 24px;
+
+}
+
+/*评论*/
+.wrap .article-comment{
+    width: 894px;
+    margin-top: 0;
+   /* border: 1px solid #e9e9e9;
+    border-radius: 6px;*/
+}
+.article-comment .comment-content-textarea{
+    width: 836px;
+}
+.article-comment .comment-reply-textarea{
+    width: 662px;
+}
+.newnav{
+    margin-bottom: 0px!important;
+}
+
+.reply-form .reply-submit{
+    background: #4175e8;
+}
+.reply-form .comment-reply-textarea{
+    border:1px solid #4175e8;
+}
+/*.reply-form .reply-word{
+    right:112px;
+}*/
+.comment-item .comment-reply-btn{
+    color: #4175e8;
+}
+.comment-item .comment-praise-v2{
+    color: #4175e8;
+}
+.comment-more .comment-more-btn{
+    color: #4175e8
+}
+.ad-banner{
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.news-video-item{
+    height: 190px;
+}
+.news-video-item-img{
+    height: 190px;
+}
+.news-video-item-title.current{
+    height: 190px;
+    padding-top:104px;
+}
+.news-video{
+    height: auto
+}

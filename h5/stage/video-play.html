@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>视频详情</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="description" content="">
+	<link rel="stylesheet" href="/h5/css/base_v2.css">
+	<link rel="stylesheet" href="/h5/css/common-once.css">
+	<link rel="stylesheet" href="/h5/css/video-play/index.css">
+	<script src="/h5/js/flexible.js"></script>
+</head>
+
+<body>
+	<!-- <div class="shade top">
+		<div class="shade-logo">
+			<img src="/h5/img/logo-blue.png" alt="">
+		</div>
+		<div class="shade-content">上电动邦，领一万元购车补贴</div>
+		<div class="shade-go">立即打开</div>
+		<div class="shade-close"></div>
+	</div> -->
+
+	<header class="head">
+		<a href="javascript:;" class="head-back"></a>
+		<div class="head-home">
+			<a href="javascript:;"></a>
+		</div>
+		<div class="head-title">视频</div>
+		<div class="head-search">
+			<a href="javascript:;"></a>
+		</div>
+		<div class="head-menu">
+			<a href="javascript:;"></a>
+		</div>
+		<div class="head-more fn-hide">
+			<div class="head-more-three"></div>
+			<div class="head-more-box">
+				<div class="head-more-box-user">
+					<div class="head-more-box-user-img">
+						<img src="/h5/img/user-shade.png" alt="">
+					</div>
+					<a href="javascript:;">登录</a>
+					<span>|</span>
+					<a href="javascript:;">注册</a>
+				</div>
+				<div class="head-more-box-nav">
+					<ul class="clearfix">
+						<li><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">选车</a></li>
+						<li><a href="javascript:;">视频</a></li>
+						<li><a href="javascript:;">资讯</a></li>
+						<li><a href="javascript:;">评测</a></li>
+						<li><a href="javascript:;">活动</a></li>
+					</ul>
+				</div>
+				<div class="head-more-box-close"></div>
+			</div>
+		</div>
+
+	</header>
+	<div class="body-shade fn-hide"></div>
+
+	<div class="player wrap">
+		<div class="player-video">
+			<script type="text/javascript" charset="utf-8" src="http://yuntv.letv.com/player/vod/bcloud.js"></script> 
+				<script type="text/javascript">
+					function GetPlayParam() {  
+						var url = 'http://yuntv.letv.com/bcloud.swf?uu=xnnm0jvcl4&vu=e47ea65671&pu=15cffce925&auto_play=0&gpcflag=1&lang=zh_CN'; //获取url中"?"符后的字串  
+						var theRequest = new Object();  
+						if (url.indexOf("?") != -1) {  
+								var str = url.substring(url.indexOf("?")+1);  
+								strs = str.split("&");  
+								for(var i = 0; i < strs.length; i ++) {  
+									theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);  
+								}  
+						}  
+						return theRequest;  
+					}  
+					var playParam = GetPlayParam();
+					var player = new CloudVodPlayer(); 
+					var playerConf = {
+						"uu":playParam['uu'],
+						"pu":"15cffce925",
+						"vu":playParam['vu'],
+						"auto_play":0,
+						"gpcflag":1,
+						"lang":"zh_CN",
+						callbackJs:"playerCall"
+					};
+					player.init(playerConf); 
+					function playerCall(type,data){
+						if (type == 'videoStartReady'){
+							//默认高清播放
+							player.sdk.setDefinition('720p')
+						}
+					}
+				</script>
+		</div>
+		<div class="player-info">
+			<div class="player-info-title">被暴力拔枪怎么办？ 珠珠给你讲如何惩治那些暴力拔枪的坏人</div>
+			<!-- <div class="player-info-author">
+				<div class="player-info-author-pic">
+					<img src="http://tva2.sinaimg.cn/crop.0.0.180.180.180/a5a5e94bjw1e8qgp5bmzyj2050050aa8.jpg" alt="">
+				</div>
+				<div class="player-info-author-name">
+					<h3>邦老师</h3>
+					<p>买电动车上电动邦</p>
+				</div>
+				<div class="player-info-author-timer">1分钟前</div>
+			</div> -->
+		</div>
+	</div>
+
+	<div class="card wrap">
+		<div class="card-box">
+			<div class="card-box-pic">
+				<img src="http://i2.dd-img.com/data/photo/41/c2/18484/1460543360.png@612w_337h.src" alt="">
+			</div>
+			<div class="card-box-info">
+				<p>特斯拉 Roadster</p>
+				<p>续航 400公里</p>
+				<em>240.99 - 366.32万元</em>
+				<div><a href="javascript:;">去看车</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="comment wrap">
+		<div class="correlation-title">最新评论</div>
+		<div class="comment-item">
+			<div class="comment-item-pic">
+				<img src="http://tva2.sinaimg.cn/crop.0.0.180.180.180/a5a5e94bjw1e8qgp5bmzyj2050050aa8.jpg" alt="">
+			</div>
+			<div class="comment-item-info">
+				<h3>上山下河</h3>
+				<p>特斯拉是一家生产和销售电动汽车以及零件的一家公司。</p>
+
+				<div class="comment-item-info-reply">
+					<div class="comment-item-info-reply-item">
+						<span>六二你好</span>：加大富豪接电话反馈静安寺
+					</div>
+					<div class="comment-item-info-reply-item">
+						<span>孙悟空</span>回复<span>@六二你好</span>：加大富豪接电话大富豪接电话反馈静安寺反馈静安寺
+					</div>
+				</div>
+
+				<div class="comment-item-info-author">
+					<div class="comment-item-info-author-timer">18分钟前</div>
+					<div class="comment-item-info-author-praise">
+						<img src="/h5/img/detail/like-item-gray.png" alt="">
+						<img class="fn-hide" src="/h5/img/detail/like-item-red.png" alt="">
+						<span>72</span>
+					</div>
+					<div class="comment-item-info-author-discuss">
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="comment-item">
+			<div class="comment-item-pic">
+				<img src="http://tva2.sinaimg.cn/crop.0.0.180.180.180/a5a5e94bjw1e8qgp5bmzyj2050050aa8.jpg" alt="">
+			</div>
+			<div class="comment-item-info">
+				<h3>上山下河</h3>
+				<p>特斯拉是一家生产和销售电动汽车以及零件的一家公司。</p>
+
+				<div class="comment-item-info-reply">
+					<div class="comment-item-info-reply-item">
+						<span>六二你好</span>：加大富豪接电话反馈静安寺
+					</div>
+					<div class="comment-item-info-reply-item">
+						<span>孙悟空</span>回复<span>@六二你好</span>：加大富豪接电话大富豪接电话反馈静安寺反馈静安寺
+					</div>
+				</div>
+
+				<div class="comment-item-info-author">
+					<div class="comment-item-info-author-timer">18分钟前</div>
+					<div class="comment-item-info-author-praise">
+						<img src="/h5/img/detail/like-article-gray.png" alt="">
+						<img class="fn-hide" src="/h5/img/detail/like-article-red.png" alt="">
+						<span>72</span>
+					</div>
+					<div class="comment-item-info-author-discuss">
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="comment-item">
+			<div class="comment-item-pic">
+				<img src="http://tva2.sinaimg.cn/crop.0.0.180.180.180/a5a5e94bjw1e8qgp5bmzyj2050050aa8.jpg" alt="">
+			</div>
+			<div class="comment-item-info">
+				<h3>上山下河</h3>
+				<p>特斯拉是一家生产和销售电动汽车以及零件的一家公司。</p>
+
+				<div class="comment-item-info-author">
+					<div class="comment-item-info-author-timer">18分钟前</div>
+					<div class="comment-item-info-author-praise">
+						<img src="/h5/img/detail/like-article-gray.png" alt="">
+						<img class="fn-hide" src="/h5/img/detail/like-article-red.png" alt="">
+						<span>72</span>
+					</div>
+					<div class="comment-item-info-author-discuss">
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="comment-item">
+			<div class="comment-item-pic">
+				<img src="http://tva2.sinaimg.cn/crop.0.0.180.180.180/a5a5e94bjw1e8qgp5bmzyj2050050aa8.jpg" alt="">
+			</div>
+			<div class="comment-item-info">
+				<h3>上山下河</h3>
+				<p>特斯拉是一家生产和销售电动汽车以及零件的一家公司。</p>
+
+				<div class="comment-item-info-reply">
+					<div class="comment-item-info-reply-item">
+						<span>六二你好</span>：加大富豪接电话反馈静安寺
+					</div>
+					<div class="comment-item-info-reply-item">
+						<span>孙悟空</span>回复<span>@六二你好</span>：加大富豪接电话大富豪接电话反馈静安寺反馈静安寺
+					</div>
+				</div>
+
+				<div class="comment-item-info-author">
+					<div class="comment-item-info-author-timer">18分钟前</div>
+					<div class="comment-item-info-author-praise">
+						<img src="/h5/img/detail/like-article-gray.png" alt="">
+						<img class="fn-hide" src="/h5/img/detail/like-article-red.png" alt="">
+						<span>72</span>
+					</div>
+					<div class="comment-item-info-author-discuss">
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="comment-more">查看全部评论</div>
+	</div>
+
+
+	
+	<footer class="footer wrap">
+		<p>©电动邦m.diandong.com</p>
+	</footer>
+
+	<div class="add-comment-footer wrap">
+		<a href="javascript:;">发表评论...</a>
+		<div class="add-comment-footer-praise">
+			<img src="/h5/img/detail/like-article-gray.png" alt="">
+			<img class="fn-hide" src="/h5/img/detail/like-article-red.png" alt="">
+			<span>72</span>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="/h5/js/common.min.js"></script>
+<script type="text/javascript">
+	seajs.use(['/h5/js/detail/index','/h5/components/header/header'], function (detail,header) {
+		detail.init();
+		header.init();
+	});
+</script>
+</html>

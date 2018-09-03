@@ -1,0 +1,140 @@
+html, body {
+    background: #fff;
+}
+section{
+    padding: 0 1.07rem;
+}
+.lottery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+    margin-top: 0.64rem;
+  line-height: 1.71rem;
+}
+
+.lottery-title {
+  width: 4.69rem;
+  font-size: 1.02rem;
+  color: #2e3033;
+}
+
+.lottery-data{
+  font-size: 0.51rem;
+  color:#3399ff;
+}
+
+
+.num {
+  width: 13.87rem;
+  height: 1.88rem;
+  border: 1px solid #ccc;
+  border-radius: 0.13rem;
+  padding: 0 0.43rem;
+  box-sizing: border-box;
+  font-size: 0.68rem;
+  margin-bottom: 0.43rem;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff;
+}
+.select{
+  background: url(/h5/img/down_blue.png) no-repeat center right 0.43rem;
+  background-size: 0.43rem;
+}
+.query {
+  width: 13.87rem;
+  height: 1.88rem;
+  line-height: 1.88rem;
+  background-color: #39f;
+  border-radius: 0.13rem;
+  color: #fff;
+  margin-top: 2.56rem;
+  outline: none;
+  border: none;
+  font-size: 0.73rem;
+}
+.query.back{
+    width: 10.24rem;
+}
+.query a{
+    color: #fff;
+}
+
+.footer {
+    margin-top: 2.56rem;
+    margin-bottom: 0rem;
+}
+.ad{
+    width: 14.72rem;
+    height: 7.34rem;
+    border-radius: 0.13rem;
+    overflow: hidden;
+    margin: 0.64rem auto 0;
+}
+.ad img{
+    width: 14.72rem;
+    min-height: 7.34rem;
+}
+
+.failure,.success{
+    text-align: center;
+}
+.headImg{
+    width: 5.97rem;
+    height: 5.97rem;
+    margin-top: 1.28rem;
+}
+.failure-intro{
+    font-size:0.73rem;
+    color:#2e3033;
+    line-height:1.07rem;
+    margin:0.43rem 0 0.21rem 0;
+}
+.success-title{
+    font-size:0.73rem;
+    color:#ff5313;
+    line-height:2.13rem;
+}
+.success-table{
+    width:12rem;
+    border:1px solid #ccc;
+    line-height:1.54rem;
+    font-size:0.68rem;
+    color:#2e3033;
+    margin:0 auto;
+    -webkit-box-orient: horizontal;
+    display:flex;
+    justify-content:space-between;
+}
+.success-table-title {
+    text-align:center;
+    /*width:3.41rem;*/
+    border-right:1px solid #ccc;
+    color:#8a9199;
+}
+.success-table-title div{
+    min-width: 3.41rem;
+    padding: 0 0.43rem;
+}
+.success-table-intro{
+    -webkit-flex: 1;
+    text-align:left;
+    padding-left:0.64rem;
+    box-sizing:border-box;
+}
+.success-table-title div:first-of-type,.success-table-intro div:first-of-type{
+    padding-top: 0.34rem;
+}
+.success-table-title div:last-of-type{
+    padding-bottom: 0.34rem;
+}
+.success-remind{
+    width: 12rem;
+    color:#ff5313;;
+    font-size: 0.51rem;
+    margin: 0.43rem auto 0;
+    text-align: left;
+    line-height: 0.8rem;
+}

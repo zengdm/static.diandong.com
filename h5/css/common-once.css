@@ -1,0 +1,422 @@
+
+html, body {
+    background: #f3f4f6;
+}
+/*feed流 begin*/
+.section-news{
+    background: #fff;
+}
+.section-news-item{
+    /*height: 4.44rem;*/
+    padding: 0.64rem;
+    border-bottom:1px solid #e6e6e6; 
+}
+.section-news-item:last-of-type{
+    border: none;
+}
+.section-news-item-content{
+    width: 9.34rem;
+}
+.section-news-item-content-title{
+    min-height: 2.05rem;
+    height: 2.05rem;
+    overflow: hidden;
+    line-height: 1.02rem;
+    font-size: 0.73rem;
+    color:#333333;
+    margin-bottom: 0.6rem;
+}
+.section-news-item-content-info{
+    font-size:0.51rem;
+    color:#999999;
+}
+.section-news-item-content-info-mess span{
+    margin-right: 0.4rem
+}
+.section-news-item-content-info-reading{
+    text-align: right;
+    background:#fff url(/h5/img/eyes.png) no-repeat;
+    background-size: 0.51rem;
+    padding-left: 0.7rem;
+}
+.section-news-item-pic,.section-news-item-little img{
+    width: 4.74rem;
+    height: 3.16rem;
+    overflow: hidden;
+    border-radius: 0.13rem;
+}
+
+.section-news-item-pic img{
+    width: 4.74rem
+}
+
+.section-news-item h1{
+    max-height: 2.05rem;
+    overflow: hidden;
+    line-height: 1.02rem;
+    font-size: 0.73rem;
+    color: #333333;
+}
+.section-news-item-big,.section-news-item-little{
+    width: 14.72rem;
+    margin:0.43rem 0;
+    overflow: hidden;
+    border-radius: 0.13rem;
+    text-align: center;
+}
+.section-news-item-big{
+    height: 8.28rem;
+     -webkit-box-orient: horizontal;
+    display: flex;
+    align-items: center;
+}
+
+.section-news-item-little img:nth-of-type(1){
+    margin-left: 0rem;
+}
+.section-news-item-little img{
+    /*margin-left: 0.08rem;*/
+}
+.section-news-item-big img{
+    width: 14.72rem;
+    border-radius: 0.13rem;
+}
+.section-news-item-big{
+    position: relative;
+}
+.section-news-item-big>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:-1.2rem;
+    margin-top: -1.2rem; 
+    width: 2.39rem;
+    height: 2.39rem;
+    background: url(/h5/img/player.png) no-repeat;
+    background-size: 2.39rem;
+
+}
+/*feed流 end*/
+
+
+
+
+/*车详情卡片 begin*/
+.card{
+    background: #f3f4f6;
+    padding: 0 0.64rem 0.64rem;
+}
+.card-box{
+    background: #fff;
+    border-radius: 0.26rem;
+    padding: 0.64rem 0 0.64rem 0.85rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.card-box-pic{
+    width: 3.84rem;
+    height: 2.56rem;
+    margin-right: 0.64rem;
+}
+.card-box-pic img{
+    width: 3.84rem;
+    height: 2.56rem;
+}
+.card-box-info{
+    line-height: 0.85rem;
+    font-size: 0.6rem;
+    color: #2e3033;
+}
+.card-box-info>div{
+    width: 2.99rem;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    text-align: center;
+    background: #39f;
+    border-radius: 0.13rem;
+    margin: 0.43rem 0 0 0.43rem;
+}
+.card-box-info>div>a{
+    color: #fff;
+}
+.card-box-info>em{
+    color:#ff5313;
+}
+.card-box-info-endurance{
+    font-size: 0.51rem;
+    line-height: 0.85rem;    
+}
+.card-box-info-endurance span{
+    color: #999;
+}
+
+
+/*车详情卡片 end*/
+
+
+
+/*评论begin*/
+.comment{
+    background: #fff;
+    margin-bottom:0.43rem; 
+    padding-bottom:0.43rem; 
+}
+.comment-box{
+     /*padding:0.43rem 0; */
+}
+.comment-item{
+    padding: 0.64rem 0.64rem 0;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.correlation-title {
+    line-height: 0.94rem;
+    font-size: 0.68rem;
+    color: #333333;
+    padding: 0.64rem 0.64rem 0;
+}
+.correlation-title:before {
+   content: "";
+    float: left;
+    width: 0.09rem;
+    height: 0.68rem;
+    background:#3399ff;
+    margin-right: 0.34rem;
+    margin-top: 0.1rem;
+}
+.comment-item-pic{
+    width: 1.71rem;
+    height: 1.71rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.comment-item-pic img{
+    width: 1.71rem;
+    height: 1.71rem;
+}
+.comment-item-info{
+    -webkit-box-flex:1;
+    color:#999999;
+    border-bottom:1px solid #e6e6e6; 
+}
+.comment-item-info h3{
+    font-size:0.6rem;
+    color:#999999;
+    margin-bottom: 0.34rem;
+}
+.comment-item-info p{
+    font-size:0.64rem;
+    line-height: 0.9rem;
+    color:#333333;
+    word-break:break-all;
+}
+.comment-item-info-author{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    line-height: 1.4rem;
+}
+.comment-item-info-author-timer{
+    -webkit-box-flex:1;
+}
+.comment-item-info-author-praise img{
+    width: 0.6rem;
+    margin-right: 0.1rem;
+    vertical-align: bottom;
+    margin-bottom: 0.43rem;
+}
+.comment-item-info-author-discuss a{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: 1.3rem;
+    display: inline-block;
+    background: url(/h5/img/detail/comment.png) no-repeat;
+    background-size: 0.6rem;
+    vertical-align: bottom;
+    margin-bottom: 0.36rem;
+}
+.comment-item-info-author-praise .comment-praise-v2,.add-comment-footer-praise .comment-praise-v2{
+    color: #ff5313;
+}
+
+.comment-item-info-reply{
+    background: #f3f4f6;
+}
+.comment-item-info-reply{
+    /*padding: 0.43rem;*/
+    margin-top: 0.43rem;
+}
+.comment-item-info-reply-item{
+    color: #5C6166;
+    font-size: 0.6rem;
+    line-height: 0.85rem;
+    margin:0 0.43rem;
+    padding: 0.2rem 0;
+    word-break: break-all;
+    /*margin-bottom: 0.43rem;*/
+}
+.reply-list-more{
+    margin-left: 0.43rem;
+    padding-bottom: 0.43rem;
+}
+.comment-item-info-reply-item em{
+    color: #5C6166;
+    font-size: 0.6rem;
+}
+.comment-item-info-reply-item:nth-last-of-type(2){
+    /*margin-bottom: 0rem;*/
+}
+.comment-item-info-reply-item span{
+    color:#2a96ff;
+}
+.add-comment-footer{
+    height: 1.88rem;
+    line-height: 1.88rem;
+    background: #fff;
+    padding: 0 0.64rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8rem;
+    border-top: 1px solid #e6e6e6;
+}
+.add-comment-footer-praise{
+    display: inline-block;
+    color:#666666;
+}
+.add-comment-footer-praise img{
+    width: 0.73rem;
+    vertical-align: bottom;
+    margin-bottom: 0.6rem;
+    margin-right: 0.1rem;
+}
+.add-comment-footer a{
+    width: 13rem;
+    font-size:0.6rem;
+    color:#3399ff;
+    display: inline-block;
+}
+.add-comment-footer-praise span{
+}
+.write{
+    margin-bottom:0.43rem;
+}
+.comment-login{
+    padding: 0.64rem;
+    background: #fff;
+    text-align: center;
+}
+.comment-login-box{
+    height: 3rem;
+    line-height: 3rem;
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    border-radius: 0.13rem;
+}
+.comment-login-box a{
+    font-size: 0.7rem;
+    color: #888;    
+}
+.comment-login-box span{
+    color: #3595e7;
+}
+.write-comment{
+    background: #fff;
+    margin-bottom: 0.64rem;
+}
+.write-comment-box{
+    padding: 0.64rem;
+}
+.write-comment-box-textarea{
+    border:1px solid #f3f4f6;
+    border-radius:0.13rem;
+    width:14.68rem;
+    height:4.61rem;
+    padding: 0.43rem;
+    overflow: hidden;
+    margin:0.64rem 0.64rem 0 0.64rem;
+}
+.write-comment-box-textarea textarea{
+    width:13.83rem;
+    height:3.76rem;
+    border: none;
+    outline: none;
+    line-height: 0.85rem;
+    font-size:0.6rem;
+    resize: none;  
+}
+.write-comment-box-button{
+    text-align: right;
+    margin: 0.64rem 0.64rem 0 0 ;
+    padding-bottom: 0.64rem
+}
+.write-comment-box-button button{
+    background:#3399ff;
+    border-radius:0.13rem;
+    width:2.56rem;
+    height:1.19rem;
+    font-size:0.6rem;
+    color:#ffffff;
+    border: none;
+    outline: none;
+}
+.comment-more{
+    width: 5.89rem;
+    height: 1.28rem;
+    display: block;
+    font-size: 0.6rem;
+    margin: 0.64rem auto 0;
+    line-height: 1.28rem;
+    text-align: center;
+    border-radius: 0.13rem;
+    color: #3399ff;
+    border: 1px solid #3399ff;
+}
+.comment-none{
+    height: 10.67rem;
+    background-image: url(/h5/img/sofa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.reply-box{
+    position: fixed;
+    bottom: 0;
+    width: 16rem;
+    margin:0 auto;
+    /*height:5.12rem;*/
+    background: #fafafa;
+    border-top: 1px solid #e6e6e6;
+    padding: 0.43rem;
+    overflow: hidden;
+}
+.reply-box textarea{
+    width: 100%;
+    height: 1.8rem;
+    border: none;
+    outline: none;
+    line-height: 0.85rem;
+    font-size: 0.6rem;
+    resize: none;
+    background: #fafafa;
+}
+.reply-box-button{
+    text-align: right;
+    margin-top: 0.43rem;
+}
+.reply-box-button button{
+    background: #3399ff;
+    border-radius: 0.13rem;
+    width: 2.56rem;
+    height: 1.19rem;
+    font-size: 0.6rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+/*评论end*/

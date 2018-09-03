@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>活动</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="description" content="">
+	<link rel="stylesheet" href="/h5/css/base_v2.css">
+	<link rel="stylesheet" href="/h5/css/common-once.css">
+	<link rel="stylesheet" href="/h5/css/active/index.css">
+	<script src="/h5/js/flexible.js"></script>
+</head>
+
+<body>
+	<header class="header wrap">
+		<div class="header-content">
+			<div class="header-content-logo">
+				<a href="javascript:;">电动邦</a>
+			</div>
+			<div class="header-content-search">
+				<a href="javascript:;">
+					<input type="text" disabled="true" placeholder="搜车型 资讯 视频">
+				</a>
+			</div>
+			<a href="javascript:;" class="header-content-user">
+				<img src="/h5/img/user.png" alt="">
+			</a>
+		</div>
+		<nav class="header-nav">
+			<ul>
+				<li><a href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">选车</a></li>
+				<li><a href="javascript:;">视频</a></li>
+				<li><a href="javascript:;">资讯</a></li>
+				<li><a href="javascript:;">评测</a></li>
+				<li><a href="javascript:;" class="current">活动</a></li>
+			</ul>
+		</nav>
+	</header> 
+	
+	<section class="section wrap">
+		<div class="section-item">
+			<a href="javascript:;">
+				<div class="section-item-pic">
+					<img src="http://upload.diandong.com/photo/project/54/94/91/1487040103.jpg" alt="">
+				</div>
+				<div class="section-item-timer proceed">还剩2天</div>
+			</a>
+		</div>
+
+		<div class="section-item">
+			<a href="javascript:;">
+				<div class="section-item-pic">
+					<img src="http://i2.dd-img.com/project/project/1d/8e/154/1521713446.jpg" alt="">
+				</div>
+				<div class="section-item-timer">已结束</div>
+			</a>
+		</div>
+
+		<div class="section-item">
+			<a href="javascript:;">
+				<div class="section-item-pic">
+					<img src="http://i2.dd-img.com/project/project/1d/8e/154/1521713446.jpg" alt="">
+				</div>
+				<div class="section-item-timer">已结束</div>
+			</a>
+		</div>
+	</section>
+	<footer class="footer wrap">
+		<p>©电动邦m.diandong.com</p>
+	</footer> 
+	<div class="shade">
+		<div class="shade-logo">
+			<img src="/h5/img/logo-blue.png" alt="">
+		</div>
+		<div class="shade-content">上电动邦，领一万元购车补贴</div>
+		<div class="shade-go">立即打开</div>
+		<div class="shade-close"></div>
+	</div>   
+</body>
+<script type="text/javascript" src="/h5/js/common.min.js"></script>
+<script type="text/javascript">
+	seajs.use(['/h5/js/index/index','/h5/components/header/header'], function (index,header) {
+		index.init();
+		header.init();
+	});
+</script>
+</html>

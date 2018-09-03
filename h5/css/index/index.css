@@ -1,0 +1,151 @@
+
+html,body{
+    background:#f3f4f6;
+}
+
+.section{
+}
+.filter {
+    background-color: #fff;
+    padding-bottom: .5rem;
+}
+.filter-tab {
+    height: 1.5rem;
+    border-bottom: 1px solid #dcdcdc;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+    padding: 0 .9rem;
+    font-size: 0;
+    box-sizing: content-box;
+}
+.filter-tab a.current {
+    color: #00a0e9;
+    border-bottom-color: #00a0e9;
+}
+
+.filter-tab a {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    font-size: .55rem;
+    height: 1.5rem;
+    overflow: hidden;
+    line-height: 1.5rem;
+    color: #343d40;
+}
+.filter-tab-brand li {
+    float: left;
+    width: 3.2rem;
+    height: 2.7rem;
+    padding-top: .3rem;
+}
+.filter-tab-brand li img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 auto .3rem;
+}
+.filter-tab-brand li em {
+    height: .8rem;
+    margin: .1rem auto 0;
+    font-style: normal;
+    line-height: .8rem;
+    text-align: center;
+    font-size: .5rem;
+    color: #344d40;
+    display: block;
+}
+.filter-tab-brand li span {
+    width: 3.2rem;
+    height: 1.42rem;
+    margin: 0 auto;
+    padding-top: .6rem;
+    text-align: center;
+    display: block;
+}
+.filter-tab-brand li span i {
+    display: inline-block;
+    width: .2rem;
+    height: .2rem;
+    margin: 0 .1rem;
+    background-color: #b2d8ff;
+    border-radius: 50%;
+}
+.filter-tab-price, .filter-tab-range {
+    padding-top: .8rem;
+}
+.filter-tab-price li {
+    float: left;
+    width: 4.8rem;
+    height: 1.8rem;
+}
+.filter-tab-price li a {
+    width: 4rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.1rem;
+    font-size: .55rem;
+    color: #323c44;
+    border: 1px solid #d2d2d2;
+    display: block;
+}
+.filter-tab-range li {
+    float: left;
+    height: 1.2rem;
+    line-height: 1.1rem;
+    margin: 0 0 .6rem;
+    padding: 0 .3rem;
+}
+.filter-tab-range li a {
+    height: 1.2rem;
+    padding: 0 .6rem;
+    font-size: .55rem;
+    color: #323c44;
+    border: 1px solid #d2d2d2;
+    display: block;
+}
+
+.focus-holder{
+	margin-bottom: 0.43rem;
+}
+.focus {
+    background-color: #fff;
+}
+.focus-container, .focus .wrap {
+    position: relative;
+    height: 7.98rem;
+}
+.focus-container {
+    width: 16rem;
+    overflow: hidden;
+}
+.focus-wrapper {
+    position: relative;
+}
+.focus-slide {
+    float: left;
+}
+.focus img {
+    width: 16rem;
+    height: 7.98rem;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:0.36rem;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 0.26rem;
+  height: 0.26rem;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 0.13rem;
+}
+.swiper-active-switch {
+  background: #39f;
+}

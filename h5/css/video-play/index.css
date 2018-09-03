@@ -1,0 +1,56 @@
+html,body{
+	background:#f3f4f6;
+}
+.player{
+	background: #fff;
+}
+.player-video{
+	width: 16rem;
+	height: 9.0rem;
+	overflow: hidden;
+}
+.player-info{
+	padding: 0 0.64rem;
+	margin-bottom: 0.64rem;
+}
+.player-info-title{
+	font-family:PingFang-SC-Bold;
+	font-size:0.73rem;
+	color:#333333;
+	line-height: 1.02rem;
+	padding: 0.43rem 0;
+	/*border-bottom: 1px solid #e6e6e6;*/
+}
+.player-info-author{
+	padding: 0.43rem 0;
+	display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    display: flex;
+    align-items: center;
+    font-size:0.51rem;
+	color:#999999;
+}
+.player-info-author-pic{
+	width: 1.71rem;
+	height: 1.71rem;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.player-info-author-pic img{
+	width: 1.71rem;
+}
+.player-info-author-name{
+    -webkit-flex: 1;
+    margin-left: 0.43rem;
+}
+.player-info-author-name h3{
+	font-size:0.6rem;
+	color:#333333;
+	line-height:0.85rem;
+	margin-bottom: 0.3rem;
+}
+.player-info-author-timer{
+	margin-bottom: 1rem;
+}
+
+

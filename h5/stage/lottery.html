@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>摇号助手</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="description" content="">
+	<link rel="stylesheet" href="/h5/css/base_v2.css">
+	<link rel="stylesheet" href="/h5/css/lottery/index.css">
+	<script src="/h5/js/flexible.js"></script>
+</head>
+
+<body>
+
+	<div class="shade top">
+		<div class="shade-logo">
+			<img src="//static.dd-img.com/h5/img/logo-blue.png" alt="">
+		</div>
+		<div class="shade-content">上电动邦，领一万元购车补贴</div>
+		<div class="shade-go"><a href="javascript:;">立即打开</a></div>
+		<div class="shade-close"></div>
+	</div>
+
+	<header class="head">
+		<a href="javascript:history.back(-1);" class="head-back"></a>
+		<div class="head-home">
+			<a href="http://m.diandong.com"></a>
+		</div>
+		<div class="head-title">摇号助手</div>
+		 <div class="head-search header-content-search">
+            <input type="text">
+        </div>
+        <div class="head-menu">
+            <a href="javascript:;"></a>
+        </div>
+		<div class="head-more fn-hide">
+	        <div class="head-more-three"></div>
+	        <div class="head-more-box">
+	                <div class="head-more-box-user">
+	                        <div class="head-more-box-user-img">
+	                            <img src="//static.dd-img.com/h5/img/user-shade.png" alt="">
+	                        </div>
+	                        <div class="head-more-box-user-info fn-hide">
+	                             <a href="http://passport.diandong.com/ark/login/">登录</a>
+	                                <span>|</span>
+	                              <a href="http://passport.diandong.com/ark/login/">注册</a>
+	                        </div>
+	                        <div class="head-more-box-user-name">
+	                             <a href="javascript:;"></a>
+	                        </div>
+	                </div>
+	                <div class="head-more-box-nav">
+	                        <ul class="clearfix">
+	                            <li><a class="" href="http://m.diandong.com">首页</a></li>
+	                            <li><a href="http://car.diandong.com">选车</a></li>
+	                            <li><a class="" href="http://m.diandong.com/video/index.html">视频</a></li>
+	                            <li><a class="current" href="http://m.diandong.com/news/index.html">资讯</a></li>
+	                            <li><a href="http://m.diandong.com/roadtest/">评测</a></li>
+								<li><a class="" href="https://www.powerlife.com.cn/diandongbang/pile.html" target="_blank">充电桩</a></li>
+	                        </ul>
+	                </div>
+	                <div class="head-more-box-close"></div>
+	        </div>
+        </div>
+	</header>
+	<div class="body-shade fn-hide"></div>
+	
+	<!-- <div class="ad">
+		<img src="http://i2.dd-img.com/project/project/fa/c3/164/1531979066.jpg" alt="">
+	</div> -->
+	<section class="wrap">
+		<div class='lottery'>
+	      <div class='lottery-title'>摇号查询</div>
+	      <!-- <div class='lottery-data'>数据更新: 2018-04-27</div> -->
+	    </div>
+		<div>
+	    	<select class='num select' name="" id="city">
+				  <option value="北京">北京</option>
+				  <option value="广州">广州</option>
+				  <option value="深圳">深圳</option>
+				  <option value="天津">天津</option>
+				  <option value="杭州">杭州</option>
+	    	</select>
+			
+			<input class='num code' type="number" name="input" placeholder='申请编码' maxlength='13' placeholder-style='color:#8a9199'></input>
+			<button class='query'><a class="query-href" href="javascript:;">查 询</a></button>
+		</div>
+	  
+	</section>
+	
+	<footer class="footer wrap">
+		<p>©电动邦m.diandong.com</p>
+	</footer>
+
+</body>
+<script type="text/javascript" src="/h5/js/common.min.js"></script>
+<script type="text/javascript">
+	seajs.use(['/h5/js/lottery/index'], function (lottery) {
+		lottery.init();
+	});
+</script>
+</html>

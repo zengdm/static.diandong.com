@@ -1,0 +1,600 @@
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background: white;
+    font-family: "PingFang SC", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+    line-height: 1.15;
+    color: #434343;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-size: 12px;
+}
+
+
+input[type=password], input[type=text],input[type=number] {
+    -webkit-appearance: none;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+
+button, input, select, textarea {
+    font: 12px/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, \5b8b\4f53;
+}
+input, select, textarea {
+    font-size: 100%;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* IE bug fixed:th 不继承 text-align */
+
+th {
+    text-align: inherit;
+}
+
+/* 去除默认边框 */
+
+fieldset, img {
+    border: 0;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+
+iframe {
+    display: block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+/* 一致的 del 样式 */
+
+del {
+    text-decoration: line-through;
+}
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+
+ol, ul {
+    list-style: none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+
+caption, th {
+    text-align: left;
+}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after {
+    content: '';
+}
+
+/* 统一上标和下标 */
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+
+/* 鼠标悬停 */
+
+a:hover {
+    color: #3595e7;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+
+ins, a {
+    text-decoration: none;
+}
+
+/* 代码字体 */
+
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/* 清理浮动 */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+    /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+
+body .fn-hide {
+    display: none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+
+.fn-left, .fn-right {
+    display: inline;
+}
+.fn-left {
+    float: left;
+}
+.fn-right {
+    float: right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 人民币符号 */
+
+.fn-rmb {
+    font-family: arial;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+/* chrome 下字体过小的问题 */
+
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+
+/* font */
+
+@font-face {
+    font-family: 'led-font';
+    src: url("/iconfont/led.ttf");
+    font-weight: normal;
+}
+.led-font {
+    font-family: "led-font" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: 'icon';
+    src: url('/iconfont/iconfont.eot');
+    src: url('/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('/iconfont/iconfont.woff') format('woff'), url('/iconfont/iconfont.ttf') format('truetype'), url('/iconfont/iconfont.svg#uxiconfont') format('svg');
+}
+.icon {
+    font-family: "icon" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* font end */
+
+
+
+
+.wrap {
+    width: 16rem;
+    margin: 0 auto;
+}
+
+
+/*big header begin*/
+.header{
+    height: 3.41rem;
+    margin-bottom: 0.43rem;
+    /*background-image:linear-gradient(40deg, #3399ff 8%, #30c4ff 96%);*/
+    background-image:linear-gradient(to right,#3399ff,#30c4ff);
+}
+.header-content{
+    width: 16rem;
+    height: 1.71rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    padding-top: 0.26rem;
+    box-sizing:border-box;
+}
+.header-content-logo{
+    width: 3.2rem;
+    height: 1.02rem;
+    margin:0.06rem 0.43rem 0 0.55rem;
+}
+.header-content-logo a{
+    height: 0;
+    font-size: 0;
+    padding-top: 1.02rem;
+    overflow: hidden;
+    display: block;
+    background-image: url(/h5/img/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-content-search{
+    width: 9.47rem;
+    height: 1.24rem;
+    font-size:0.6rem;
+    overflow: hidden;
+    color:#999999;
+    border-radius:0.13rem;
+}
+.header-content-search a{
+     width: 9.47rem;
+    height: 1.24rem;
+    display: inline-block;
+}
+.header-content-search input{
+    width: 9.47rem;
+    height: 1.24rem;
+    border: none;
+    background:#fff url(/h5/img/search.png) no-repeat;
+    background-position: 1.96rem center; 
+    background-size: 0.68rem;
+    outline: none;
+    padding-left: 2.8rem;
+    box-sizing:border-box;
+    font-size: 0.6rem;
+     transition: all .3s;
+}
+input::-webkit-input-placeholder{
+    color:#999;
+}
+.header-content-user{
+    width: 1.11rem;
+    height: 1.11rem;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+    margin:0.06rem 0.64rem 0 0.55rem;
+}
+.header-content-user img{
+    width: 1.11rem;
+}
+.header-nav{
+    height: 1.71rem;
+    line-height: 1.71rem;
+    font-size: 0.68rem;
+    padding: 0 0.21rem;
+    box-sizing:border-box;
+}
+.header-nav ul{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.header-nav li{
+    text-align: center;
+    -webkit-box-flex:1;
+}
+.header-nav a{
+    color: rgba(255,255,255,0.7);
+}
+.header-nav a.current{
+    color: #fff;
+}
+
+/*big header end*/
+
+
+.body-shade{
+    width: 16rem;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -8rem;
+    z-index: 100;
+}
+.head{
+   width: 16rem;
+    height: 1.71rem;
+    background:#3399ff;;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    display: flex;
+    align-items: center;
+    padding: 0 0.68rem;
+    position: relative;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -8rem;
+}
+.head-back{
+    width: 0.38rem;
+    height: 0.6rem;
+    display: inline-block;
+    background:url(/h5/img/back.png) no-repeat; 
+    background-size: 0.38rem;
+}
+.head-home{
+    width: 0.85rem;
+    height: 0.85rem;
+    margin:0 0.64rem 0 0.77rem; 
+}
+.head-home a{
+    height: 0;
+    font-size: 0;
+    padding-top: 0.85rem;
+    overflow: hidden;
+    display: block;
+    background-image: url(/h5/img/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-title{
+    font-size:0.64rem;
+    color:#ffffff;
+    -webkit-flex: 1;
+}
+.head-search{
+    width: 2.56rem;
+    height: 1.24rem;
+    margin-right: 0.64rem;
+    transition: all .3s;
+}
+.head-search input{
+    width: 2.56rem;
+    height: 1.24rem;
+    border: none;
+    background: #fff url(/h5/img/search.png) no-repeat 0.43rem center;
+    background-size: 0.68rem;
+    outline: none;
+    padding-left: 1.2rem;
+    box-sizing: border-box;
+    font-size: 0.6rem;
+     transition: all .3s;
+}
+
+.head-search a{
+    height: 0;
+    font-size: 0;
+    padding-top: 1.24rem;
+    overflow: hidden;
+    display: block;
+    background-image: url(/h5/img/search-long.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-menu{
+    width: 0.9rem;
+    height: 0.68rem;
+}
+.head-menu a{
+    height: 0;
+    font-size: 0;
+    padding-top: 0.68rem;
+    overflow: hidden;
+    display: block;
+    background-image: url(/h5/img/menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-more{
+    position: absolute;
+    top: 1.48rem;
+    right: 0rem;
+    z-index: 1000;
+}
+.head-more-three{
+  height: 0px;
+  width: 0px;
+  border-right:0.26rem solid transparent;
+  border-left: 0.26rem solid transparent;
+  border-bottom: 0.24rem  solid #fff;
+  margin-left: 7.6rem;
+}
+ 
+.head-more-box{
+    width: 8.96rem;
+    background: #fff;
+}
+.head-more-box-user{
+    font-size: 0;
+    height: 1.96rem;
+    line-height: 1.96rem;
+    border-bottom:1px solid #cfcfcf; 
+}
+.head-more-box-user-img{
+    width: 1.11rem;
+    height: 1.11rem;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 0.38rem 0.64rem 0.6rem;
+    vertical-align: bottom;
+}
+.head-more-box-user-info,.head-more-box-user-name{
+    display: inline-block;
+}
+.head-more-box-user a{
+    font-size: 0.6rem;
+    color: #333;
+}
+.head-more-box-user-info a{
+    vertical-align: top;
+}
+.head-more-box-user-img img{
+    width: 1.11rem;
+    vertical-align: top;
+}
+.head-more-box-user span{
+    font-size: 0.6rem;
+    color: #cfcfcf;
+    padding: 0 0.3rem;
+}
+
+.head-more-box-nav>ul>li{
+    float: left;
+    width: 2.98rem;
+    height: 1.71rem;
+    line-height: 1.71rem;
+    text-align: center;
+    overflow: hidden;
+    border-right: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf
+}
+.head-more-box-nav>ul>li:nth-of-type(3n){
+    border-right: none;
+}
+.head-more-box-nav>ul>li>a{
+    display: inline-block;
+    width: 2.98rem;
+    height: 1.71rem;
+    font-size:0.64rem;
+    color:#333333;
+}
+.head-more-box-close{
+    height: 1.54rem;
+    background: url(/h5/img/detail/close-black.png) no-repeat center;
+    background-size: 0.6rem;
+}
+
+.footer{
+    height: 2.13rem;
+    line-height: 2.13rem;
+    text-align: center;
+    font-size:0.51rem;
+    color:#333;
+    margin-bottom: 2.13rem;
+}
+
+.shade{
+    width: 16rem;
+    height: 2.13rem;
+    line-height: 2.13rem;
+    background: rgba(0,0,0,0.8);
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    display: flex;
+    align-items: center;
+    padding: 0 0.64rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8rem;
+    z-index: 10000;
+}
+.shade.top{
+    background:#ffffff;
+    position: static;
+    margin: 0 auto;
+}
+.shade.top .shade-content{
+    color: #333333;
+}
+.shade.top .shade-go{
+    background:#3399ff;
+    color: #fff;
+}
+.shade.top .shade-go a{
+    color: #fff;
+    display: inline-block;
+}
+.shade.top .shade-close{
+    background:url(/h5/img/close-b.png) no-repeat; 
+    background-size: 0.51rem;
+}
+.shade-logo{
+    width: 1.71rem;
+    height: 1.71rem;
+    margin-right: 0.34rem;
+}
+.shade-logo img{
+    width: 1.71rem;
+    vertical-align: top;
+}
+.shade-content{
+    font-size:0.55rem;
+    color:#fff;
+    -webkit-flex: 1;
+}
+.shade-go{
+    width: 2.65rem;
+    height: 1.11rem;
+    text-align: center;
+    line-height: 1.11rem;
+    border-radius: 0.13rem;
+    background: #fff;
+    font-size:0.51rem;
+    color:#3399ff;
+}
+.shade-close{
+    width: 0.51rem;
+    height: 0.51rem;
+    background:url(/h5/img/close.png) no-repeat; 
+    background-size: 0.51rem;
+    margin-left: 0.64rem;
+}
+.shade-go a{
+    color:#3399ff;
+    display: inline-block;
+}

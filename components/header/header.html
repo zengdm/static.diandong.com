@@ -1,0 +1,55 @@
+<nav class="newnav">
+	<div class="newnav-wrap clearfix">
+		<div class="newnav-logo fn-left">
+			<a href="http://www.diandong.com/"></a>
+		</div>
+		<div class="newnav-list fn-left">
+			<a href="//www.diandong.com" target='_blank'>首页</a>
+   			<a href="//www.diandong.com/news/index.html"  target='_blank'>资讯</a>
+    		<a href="//car.diandong.com/"  target='_blank'>车型库</a>
+		    <a href="//www.diandong.com/roadtest/"  target='_blank'>评测</a>
+		    <a href="//www.diandong.com/video/index.html"  target='_blank'>视频</a>
+		    <a href="//www.diandong.com/mall/"  target='_blank'>活动</a>
+		    <a href="//www.diandong.com/app/"  target='_blank'>客户端</a>
+		</div>
+		<div class="newnav-search fn-left clearfix">
+			<div id="city-holder" class="city-holder fn-left">
+				<div class="current-city">
+					<i class="icon">&#xe659;</i>
+					<a href="javascript:;"></a>
+				</div>
+			</div>
+			<div id="search-holder" class="search-holder fn-right">
+				<div class="search-wrapper" id="search-wrapper">
+					<div class="search-bar">
+						<input type="text" class="search-input" value="" placeholder="车型/文章">
+						<a class="search-submit-btn" href="javascript:;" target="_blank">
+							<i class="icon">&#xe60a;</i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="user-holder" class="user-holder fn-right">
+            <div class="newnav-login fn-hide">
+				<a href="javascript:;" target="_blank">登录</a>|
+				<a href="javascript:;" target="_blank">注册</a>
+			</div>
+			<div class="user-panel fn-hide">
+				<div class="user-panel-avatar">
+					<img src="http://uc.diandong.com/images/noavatar_middle.gif" alt="">
+				</div>
+				<a class="user-panel-name">名字</a>
+				<a class="user-panel-exit">退出</a>
+			</div>
+        </div>
+		
+	</div>
+</nav>
+<script type="text/javascript" src="//static.diandong.com/js/common.js"></script>
+<script>
+	seajs.use(['//static.diandong.com/components/header/header'], function (header) {
+		header.init();
+	});
+</script>

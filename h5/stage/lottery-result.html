@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>摇号助手</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="description" content="">
+	<link rel="stylesheet" href="/h5/css/base_v2.css">
+	<link rel="stylesheet" href="/h5/css/lottery/index.css">
+	<script src="/h5/js/flexible.js"></script>
+</head>
+
+<body>
+
+	<div class="shade top">
+		<div class="shade-logo">
+			<img src="//static.dd-img.com/h5/img/logo-blue.png" alt="">
+		</div>
+		<div class="shade-content">上电动邦，领一万元购车补贴</div>
+		<div class="shade-go"><a href="javascript:;">立即打开</a></div>
+		<div class="shade-close"></div>
+	</div>
+
+	<header class="head">
+		<a href="javascript:history.back(-1);" class="head-back"></a>
+		<div class="head-home">
+			<a href="http://m.diandong.com"></a>
+		</div>
+		<div class="head-title">摇号助手</div>
+		 <div class="head-search header-content-search">
+            <input type="text">
+        </div>
+        <div class="head-menu">
+            <a href="javascript:;"></a>
+        </div>
+		<div class="head-more fn-hide">
+	        <div class="head-more-three"></div>
+	        <div class="head-more-box">
+	                <div class="head-more-box-user">
+	                        <div class="head-more-box-user-img">
+	                            <img src="//static.dd-img.com/h5/img/user-shade.png" alt="">
+	                        </div>
+	                        <div class="head-more-box-user-info fn-hide">
+	                             <a href="http://passport.diandong.com/ark/login/">登录</a>
+	                                <span>|</span>
+	                              <a href="http://passport.diandong.com/ark/login/">注册</a>
+	                        </div>
+	                        <div class="head-more-box-user-name">
+	                             <a href="javascript:;"></a>
+	                        </div>
+	                </div>
+	                <div class="head-more-box-nav">
+	                        <ul class="clearfix">
+	                            <li><a class="" href="http://m.diandong.com">首页</a></li>
+	                            <li><a href="http://car.diandong.com">选车</a></li>
+	                            <li><a class="" href="http://m.diandong.com/video/index.html">视频</a></li>
+	                            <li><a class="current" href="http://m.diandong.com/news/index.html">资讯</a></li>
+	                            <li><a href="http://m.diandong.com/roadtest/">评测</a></li>
+								<li><a class="" href="https://www.powerlife.com.cn/diandongbang/pile.html" target="_blank">充电桩</a></li>
+	                        </ul>
+	                </div>
+	                <div class="head-more-box-close"></div>
+	        </div>
+        </div>
+	</header>
+	<div class="body-shade fn-hide"></div>
+	
+
+	<section>
+		<div class="success fn-hide">
+			<img class='headImg' src="/h5/img/success.png" alt="">
+		    <div class='success-title'>恭喜您，中签啦！</div>
+		    <div class='success-table'>
+		      <div class='success-table-title'>
+		        <div>摇号城市</div>
+		        <div>中签日期</div>
+		        <div>中签编码</div>
+		      </div>
+		      <div class='success-table-intro'>
+		        <div class="success-table-intro-city"></div>
+		        <div class="success-table-intro-date"></div>
+		        <div class="success-table-intro-code"></div>
+		      </div>
+		    </div>
+
+		  <!--   <div class="success-remind">摇号指标有效期为6个月，请安排好您的购车事宜，避免逾期作废</div> -->
+		</div>
+		<div class="failure fn-hide">
+			<img class='headImg' src="/h5/img/failure.png" alt="">
+      		<div class='failure-intro'>很遗憾，本次摇号未中签</div>
+      		<button class='query back'><a href="/h5/stage/lottery.html">重新查询</a></button>
+		</div>
+	</section>
+	
+	
+
+</body>
+<script type="text/javascript" src="/h5/js/common.min.js"></script>
+<script type="text/javascript">
+	seajs.use(['/h5/js/lottery/result'], function (lottery) {
+		lottery.init();
+	});
+</script>
+</html>

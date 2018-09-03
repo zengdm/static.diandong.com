@@ -1,0 +1,88 @@
+.dd-global-footer {
+    width: 100%;
+    min-width: 1200px;
+}
+.site-desc {
+    background-color: #2f3942;
+}
+.site-desc .wrap {
+    height: 252px;
+}
+.site-description {
+    width: 330px;
+    float: left;
+    margin-right: 100px;
+}
+.footer-logo {
+    width: 152px;
+    height: 61px;
+    background-image: url(http://assets.diandong.com/web/images/common/footer_logo.png);
+    background-repeat: no-repeat;
+    margin-bottom: 18px;
+}
+.site-description p {
+    color: #9da6ad;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer-link {
+    width: 450px;
+    float: left;
+    padding-top: 75px;
+}
+.footer-link dl {
+    width: 150px;
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer-link dt {
+    color: #9da6ad;
+    font-weight: bold;
+}
+.footer-link dd a {
+    color: #9da6ad;
+}
+.footer-link dd a:hover {
+    color: #ccc;
+}
+.footer-code {
+    width: 156px;
+    float: right;
+    padding-top: 44px;
+}
+.footer-code h3 {
+    height: 34px;
+    line-height: 34px;
+    color: #d3d8dd;
+    font-size: 14px;
+    text-align: center;
+}
+.footer-code-image {
+    width: 156px;
+    height: 156px;
+    background-image: url(http://assets.diandong.com/web/images/common/code.png);
+    background-repeat: no-repeat;
+}
+.site-copyright {
+    background-color: black;
+    min-width: 1200px;
+}
+.site-copyright .wrap {
+    height: 41px;
+    line-height: 41px;
+    color: #828282;
+    font-size: 12px;
+    padding: 7px 0;
+    overflow: hidden;
+}
+.site-copyright p {
+    margin-right: 40px;
+}
+.site-map {
+    color: #828282;
+}
+.site-map:hover {
+    color: #828282;
+    text-decoration: underline;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="description" content="">
+	<link rel="stylesheet" href="/h5/css/base_v2.css">
+	<link rel="stylesheet" href="/h5/css/common-once.css">
+	<link rel="stylesheet" href="/h5/css/index/index.css">
+	<script src="/h5/js/flexible.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+
+<body>
+	<header class="header wrap">
+		<div class="header-content">
+			<div class="header-content-logo">
+				<a href="http://m.diandong.com/">电动邦</a>
+			</div>
+			<div class="header-content-search">
+				<input type="text" placeholder="搜车型 资讯 视频">
+			</div>
+			<a href="//passport.diandong.com/ark/login/" class="header-content-user">
+				<img src="//test.static.diandong.com/h5/img/user.png" alt="">
+			</a>
+		</div>
+		<nav class="header-nav">
+			<ul>
+				<li><a href="http://m.diandong.com/">首页</a></li>
+				<li><a class="current" href="http://car.diandong.com/">选车</a></li>
+				<li><a href="http://m.diandong.com/video/">视频</a></li>
+				<li><a href="http://m.diandong.com/news/">资讯</a></li>
+				<li><a href="http://m.diandong.com/roadtest/">评测</a></li>
+				<li><a href="http://www.diandong.com/mall/">活动</a></li>
+			</ul>
+		</nav>
+	</header> 
+	<section class="section wrap">
+		<div id="filter-holder" class="filter-holder">
+	        <div id="filter" class="filter">
+	            <div class="wrap">
+	                <nav class="filter-tab">
+	                    <a href="javascript:;" class="filter-tab-button current">按品牌</a>
+	                    <a href="javascript:;" class="filter-tab-button">按价格</a>
+	                    <a href="javascript:;" class="filter-tab-button">按续航</a>
+	                    <a href="http://car.diandong.com/" class="J-quickselect-more">更多条件</a>
+	                </nav>
+	                <div class="filter-tabcon">
+	                    <div class="filter-tab-content filter-tab-brand">
+	                        <ul class="clearfix">
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/30">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/34/3f/30/1457340232.png@50w_1e_1c_0o_0l.src" alt="比亚迪电动汽车">
+	                                    <em>比亚迪</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/31">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/c1/f5/31/1480415354.png@50w_1e_1c_0o_0l.src" alt="北汽新能源电动汽车">
+	                                    <em>北汽新能源</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/3">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/ec/f3/3/1457340572.png@50w_1e_1c_0o_0l.src" alt="吉利汽车电动汽车">
+	                                    <em>吉利汽车</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/4">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/a8/2c/4/1457340556.png@50w_1e_1c_0o_0l.src" alt="长安电动汽车">
+	                                    <em>长安</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/40">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/d6/e0/40/1457339624.png@50w_1e_1c_0o_0l.src" alt="宝马电动汽车">
+	                                    <em>宝马</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/44">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/f7/c6/44/1480415966.png@50w_1e_1c_0o_0l.src" alt="江淮电动汽车">
+	                                    <em>江淮</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/48">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/64/b6/48/1457339445.png@50w_1e_1c_0o_0l.src" alt="奇瑞电动汽车">
+	                                    <em>奇瑞</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/25">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/8e/ec/25/1457340287.png@50w_1e_1c_0o_0l.src" alt="腾势汽车电动汽车">
+	                                    <em>腾势汽车</em>
+	                                </a>
+	                            </li>
+	                                                            <li>
+	                                <a href="http://car.diandong.com/pinpai/index/7">
+	                                    <img src="http://i2.dd-img.com/data/pinpai/8f/43/7/1457340513.png@50w_1e_1c_0o_0l.src" alt="特斯拉电动汽车">
+	                                    <em>特斯拉</em>
+	                                </a>
+	                            </li>
+	                            
+	                            <li>
+	                                <a href="http://car.diandong.com">
+	                                    <span><i></i><i></i><i></i></span>
+	                                    <em>更多</em>
+	                                </a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <div class="filter-tab-content filter-tab-price fn-hide">
+	                        <ul class="clearfix">
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-0,10-0-0-0-0-0-0-0-0-0">10万以下</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-10,20-0-0-0-0-0-0-0-ordercount-desc">10-20万</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-20,30-0-0-0-0-0-0-0-ordercount-desc">20-30万</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-30,50-0-0-0-0-0-0-0-ordercount-desc">30-50万</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-50,999999-0-0-0-0-0-0-0-ordercount-desc">50万以上</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <div class="filter-tab-content filter-tab-range fn-hide">
+	                        <ul class="clearfix">
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-0-0-0-0-0,100-0-0-0-ordercount-desc">100公里以下</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-0-0-0-0-100,200-0-0-0-ordercount-desc">100-200公里</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-0-0-0-0-200,300-0-0-0-ordercount-desc">200-300公里</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-0-0-0-0-300,400-0-0-0-ordercount-desc">300-400公里</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://car.diandong.com/search/1-0-0-0-0-400,999999-0-0-0-ordercount-desc">400公里以上</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div id="focus-holder" class="focus-holder">
+            <div id="focus" class="focus">
+                <div class="wrap">
+                    <div class="focus-container">
+                        <div class="focus-wrapper">
+
+                            <div class="focus-slide" >
+                                <a href="http://www.diandong.com/video/2018080190152.shtml"><img src="http://i2.dd-img.com/upload/2018/0801/1533082984461.jpg" alt="珠珠试驾力帆650EV"></a>
+                            </div>
+                            <div class="focus-slide" >
+                                <a href="http://www.diandong.com/roadtest/2018080189985.shtml"><img src="http://i2.dd-img.com/upload/2018/0801/1533085284610.jpg" alt="综合续航400公里只卖9万？试驾云度π1 Pro和π3 Pro"></a>
+                            </div>
+                            <div class="focus-slide" id="agency_shower_61">
+                                <a href="http://www.diandong.com/news/2018080190162.shtml"><img src="http://i2.dd-img.com/upload/2018/0801/1533086622202.jpg" alt="『汤叔解惑』奇瑞新能源eQ1表显续航剩余14公里却趴窝是为何？"></a>
+                            </div>
+                            <div class="focus-slide" >
+                                <a href="http://www.diandong.com/video/2018073089600.shtml"><img src="http://i2.dd-img.com/upload/2018/0731/1532995224266.jpg" alt="以降价换销量？听听三位车主如何评价广汽传祺 GE3"></a>
+                            </div>
+                            <div class="focus-slide" >
+                                <a href="http://www.diandong.com/news/2018080190103.shtml"><img src="http://i2.dd-img.com/upload/2018/0801/1533084430563.jpg" alt="BMW Mission i 探境未然之旅——探访山城重庆"></a>
+                            </div>
+                            <div class="focus-slide" >
+                                <a href="http://www.diandong.com/video/2018073090011.shtml"><img src="http://i2.dd-img.com/upload/2018/0731/1532995250586.jpg" alt="被暴力拔枪怎么办？ 珠珠给你讲如何惩治那些暴力拔枪的坏人"></a>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+            </div>
+        </div>
+
+		<div class="section-news wrap">
+
+			<!-- 左文右图 -->
+			<div class="section-news-item">
+				<a href="javascript:;" class="clearfix">
+					<div class="section-news-item-content fn-left">
+						<div class="section-news-item-content-title">自动驾驶专家李谦博士加盟华人运通，负责尖端技术研发
+						</div>
+						<div class="section-news-item-content-info clearfix">
+							<div class="section-news-item-content-info-mess fn-left">
+								<span>腾讯科技</span>
+								<span>6-30</span>
+							</div>
+							<div class="section-news-item-content-info-reading fn-right">
+								1029
+							</div>
+						</div>
+					</div>
+					<div class="section-news-item-pic fn-right">
+						<img src="http://i2.dd-img.com/upload/2018/0801/1533096965242.png@300w_200h_1e_1c_0o_0l.src" alt="">
+					</div>
+				</a>
+			</div>
+
+			<!-- 左文右图 -->
+			<div class="section-news-item">
+				<a href="javascript:;" class="clearfix">
+					<div class="section-news-item-content fn-left">
+						<div class="section-news-item-content-title">爱上我好的伟大时代即为我
+说了多少的大空间
+						</div>
+						<div class="section-news-item-content-info clearfix">
+							<div class="section-news-item-content-info-mess fn-left">
+								<span>腾讯科技</span>
+								<span>6-30</span>
+							</div>
+							<div class="section-news-item-content-info-reading fn-right">
+								1029
+							</div>
+						</div>
+					</div>
+					<div class="section-news-item-pic fn-right">
+						<img src="http://i2.dd-img.com/upload/2018/0801/1533096965242.png@300w_200h_1e_1c_0o_0l.src" alt="">
+					</div>
+				</a>
+			</div>
+			
+			<!-- 三张小图 -->
+			<div class="section-news-item">
+				<a href="javascript:;">
+					<h1>我恶意位爷我我我恶化无聊的</h1>
+					<div class="section-news-item-little">
+						<img src="http://i2.dd-img.com/upload/2018/0801/1533096965242.png@300w_200h_1e_1c_0o_0l.src" alt="">
+						<img src="http://i2.dd-img.com/upload/2018/0801/1533096965242.png@300w_200h_1e_1c_0o_0l.src" alt="">
+						<img src="http://i2.dd-img.com/upload/2018/0801/1533096965242.png@300w_200h_1e_1c_0o_0l.src" alt="">
+					</div>
+					<div class="section-news-item-content-info clearfix">
+						<div class="section-news-item-content-info-mess fn-left">
+							<span>腾讯科技</span>
+							<span>6-30</span>
+						</div>
+						<div class="section-news-item-content-info-reading fn-right">
+							1029
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- 左文右图 -->
+			<div class="section-news-item">
+				<a href="javascript:;" class="clearfix">
+					<div class="section-news-item-content fn-left">
+						<div class="section-news-item-content-title">自动驾驶专家李谦博士加盟华人运通，负责尖端技术研发
+						</div>
+						<div class="section-news-item-content-info clearfix">
+							<div class="section-news-item-content-info-mess fn-left">
+								<span>腾讯科技</span>
+								<span>6-30</span>
+							</div>
+							<div class="section-news-item-content-info-reading fn-right">
+								1029
+							</div>
+						</div>
+					</div>
+					<div class="section-news-item-pic fn-right">
+						<img src="http://i2.dd-img.com/upload/2018/0801/1533096965242.png@300w_200h_1e_1c_0o_0l.src" alt="">
+					</div>
+				</a>
+			</div>
+			
+			<!-- 一张大图 -->
+			<div class="section-news-item">
+				<a href="javascript:;">
+					<h1>我恶意位爷我我我恶化无聊的</h1>
+					<div class="section-news-item-big">
+						<img src="http://i2.dd-img.com/upload/2018/0728/1532720324753.jpg@588w_308h_1e_1c_0o_0l.src" alt="">
+					</div>
+					<div class="section-news-item-content-info clearfix">
+						<div class="section-news-item-content-info-mess fn-left">
+							<span>腾讯科技</span>
+							<span>6-30</span>
+						</div>
+						<div class="section-news-item-content-info-reading fn-right">
+							1029
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- 一张大图 -->
+			<div class="section-news-item">
+				<a href="javascript:;">
+					<h1>我恶意位爷我我我恶意位爷我我我恶化无聊意位爷我我我恶化无聊化无聊的</h1>
+					<div class="section-news-item-big">
+						<img src="http://i2.dd-img.com/upload/2018/0728/1532720324753.jpg@588w_308h_1e_1c_0o_0l.src" alt="">
+					</div>
+					<div class="section-news-item-content-info clearfix">
+						<div class="section-news-item-content-info-mess fn-left">
+							<span>腾讯科技</span>
+							<span>6-30</span>
+						</div>
+						<div class="section-news-item-content-info-reading fn-right">
+							1029
+						</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+	</section> 
+	<footer class="footer wrap">
+		<p>©电动邦m.diandong.com</p>
+	</footer> 
+	<div class="shade">
+		<div class="shade-logo">
+			<img src="/h5/img/logo-blue.png" alt="">
+		</div>
+		<div class="shade-content">上电动邦，领一万元购车补贴</div>
+		<div class="shade-go"><a href="javascript:;">立即打开</a></div>
+		<div class="shade-close"></div>
+	</div>   
+</body>
+<script type="text/javascript" src="/h5/js/common.min.js"></script>
+<script type="text/javascript" src="/h5/js/wx/wxshare_v2.js"></script>
+<script type="text/javascript">
+	seajs.use(['/h5/js/index/index','/h5/components/header/header'], function (index,header) {
+		index.init();
+		header.init();
+	});
+</script>
+</html>
